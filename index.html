@@ -1,0 +1,408 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="author" content="Alina Maistrenko"/>
+    <meta name="description" content="Lessons and insights"/>
+    <meta name="keywords" content="business,lessons,insights,design"/>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="icon" type="image/svg" href="image/favicon.svg">
+    <style>
+        /* CSS Reset by Josh Comeau */
+        /* ( https://www.joshwcomeau.com/css/custom-css-reset/#the-css-reset-1 ) */
+
+        /* 1. Use a more-intuitive box-sizing model */
+        *, *::before, *::after {
+          box-sizing: border-box;
+        }
+        /* 2. Remove default margin */
+        * {
+          margin: 0;
+        }
+        body {
+          /* 3. Add accessible line-height */
+          line-height: 1.5;
+          /* 4. Improve text rendering */
+          -webkit-font-smoothing: antialiased;
+        }
+        /* 5. Improve media defaults */
+        img, picture, video, canvas, svg {
+          display: block;
+          max-width: 100%;
+        }
+        /* 6. Inherit fonts for form controls
+        input, button, textarea, select {
+          font: inherit;
+        } */
+        /* 7. Avoid text overflows */
+        p, h1, h2, h3, h4, h5, h6 {
+          overflow-wrap: break-word;
+        }
+        /* 8. Improve line wrapping */
+        p {
+          text-wrap: pretty;
+        }
+        h1, h2, h3, h4, h5, h6 {
+          text-wrap: balance;
+        }
+        ul, ol {
+          padding-inline-start: 0;
+        }
+        /*
+          9. Create a root stacking context
+        */
+        #root, #__next {
+          isolation: isolate;
+        }
+    </style>
+    <title>Nexcent</title>
+</head>
+<body>
+    <header class="header">
+        <div class="container header_inner">
+            <a href="" class="logo">
+                <svg width="155" height="24" viewBox="0 0 108 17" fill="none" xmlns="http://www.w3.org/2000/svg">
+                <path d="M13.0766 9.14215L9.32411 15.5689L5.57168 9.14215H13.0766ZM14.0818 8.56775H4.56235L9.32411 16.7056L14.0818 8.56775Z" fill="#263238"/>
+                <path d="M19.6007 1.14878L23.3531 7.57551H15.8482L19.6007 1.14878ZM19.6007 0L14.8389 8.13785H24.3624L19.6007 0Z" fill="#263238"/>
+                <path d="M0 0L3.99259 7.19795L8.35551 0.180742L0 0Z" fill="#4CAF4F"/>
+                <path d="M9.32422 0.630615L13.5122 7.7884H5.12814L9.32422 0.630615Z" fill="#4CAF4F"/>
+                <path d="M14.5906 9.35107L18.7827 16.7057H10.1992L14.4604 9.35107H14.5906Z" fill="#4CAF4F"/>
+                <path d="M15.4982 8.90515L19.6007 16.1473L23.7601 8.90515H15.4982Z" fill="#4CAF4F"/>
+                <path d="M41.7869 1.16174V15.3362H39.1984L33.0317 6.41489H32.9279V15.3362H29.931V1.16174H32.561L38.6793 10.0762H38.8039V1.16174H41.7869Z" fill="#263238"/>
+                <path d="M49.0524 15.5439C47.9589 15.5439 47.0176 15.3224 46.2286 14.8795C45.4442 14.4319 44.8397 13.7998 44.4152 12.9831C43.9907 12.1618 43.7785 11.1905 43.7785 10.0693C43.7785 8.97572 43.9907 8.01598 44.4152 7.19006C44.8397 6.36414 45.4372 5.72047 46.2078 5.25906C46.983 4.79765 47.8919 4.56695 48.9347 4.56695C49.6361 4.56695 50.289 4.67999 50.8934 4.90608C51.5025 5.12756 52.0331 5.46208 52.4853 5.90965C52.9421 6.35722 53.2974 6.92014 53.5511 7.59841C53.8049 8.27207 53.9318 9.06108 53.9318 9.96544V10.7752H44.9551V8.94803H51.1564C51.1564 8.52354 51.0641 8.14749 50.8796 7.81989C50.695 7.49228 50.4389 7.2362 50.1113 7.05164C49.7883 6.86246 49.4123 6.76787 48.9832 6.76787C48.5356 6.76787 48.1388 6.87169 47.7927 7.07932C47.4513 7.28234 47.1837 7.55688 46.9899 7.90294C46.7961 8.24438 46.6969 8.62504 46.6923 9.04493V10.7821C46.6923 11.3081 46.7892 11.7626 46.983 12.1456C47.1814 12.5286 47.4605 12.8239 47.8204 13.0315C48.1803 13.2391 48.6071 13.343 49.1008 13.343C49.4284 13.343 49.7284 13.2968 50.0006 13.2045C50.2728 13.1123 50.5058 12.9738 50.6996 12.7893C50.8934 12.6047 51.0411 12.3786 51.1426 12.111L53.8695 12.2909C53.7311 12.9461 53.4473 13.5183 53.0182 14.0074C52.5937 14.4919 52.0446 14.8702 51.371 15.1425C50.7019 15.4101 49.9291 15.5439 49.0524 15.5439Z" fill="#263238"/>
+                <path d="M58.1295 4.70537L60.0812 8.42202L62.0814 4.70537H65.106L62.0261 10.0208L65.189 15.3362H62.1783L60.0812 11.6611L58.0187 15.3362H54.9734L58.1295 10.0208L55.0842 4.70537H58.1295Z" fill="#263238"/>
+                <path d="M71.2797 15.5439C70.1907 15.5439 69.2541 15.3132 68.4697 14.8518C67.6899 14.3857 67.0901 13.7398 66.6702 12.9138C66.2549 12.0879 66.0473 11.1374 66.0473 10.0623C66.0473 8.97341 66.2572 8.01829 66.6771 7.19698C67.1016 6.37106 67.7037 5.72739 68.4835 5.26598C69.2633 4.79996 70.1907 4.56695 71.2658 4.56695C72.1932 4.56695 73.0053 4.73536 73.7021 5.07219C74.3988 5.40902 74.9502 5.88196 75.3562 6.49103C75.7622 7.10009 75.986 7.81527 76.0276 8.63658H73.2453C73.1668 8.10596 72.9592 7.67916 72.6224 7.35617C72.2901 7.02857 71.8541 6.86477 71.3143 6.86477C70.8575 6.86477 70.4583 6.98935 70.1169 7.23851C69.7801 7.48306 69.5171 7.84065 69.3279 8.31129C69.1387 8.78193 69.0441 9.35177 69.0441 10.0208C69.0441 10.6991 69.1364 11.2758 69.321 11.7511C69.5101 12.2263 69.7755 12.5886 70.1169 12.8377C70.4583 13.0869 70.8575 13.2115 71.3143 13.2115C71.6511 13.2115 71.9533 13.1422 72.2209 13.0038C72.4932 12.8654 72.7169 12.6647 72.8923 12.4017C73.0722 12.1341 73.1899 11.8134 73.2453 11.4396H76.0276C75.9814 12.2517 75.7599 12.9669 75.3631 13.5852C74.9709 14.1989 74.4288 14.6787 73.7367 15.0248C73.0445 15.3709 72.2255 15.5439 71.2797 15.5439Z" fill="#263238"/>
+                <path d="M82.7601 15.5439C81.6666 15.5439 80.7253 15.3224 79.9363 14.8795C79.1519 14.4319 78.5474 13.7998 78.1229 12.9831C77.6984 12.1618 77.4862 11.1905 77.4862 10.0693C77.4862 8.97572 77.6984 8.01598 78.1229 7.19006C78.5474 6.36414 79.145 5.72047 79.9155 5.25906C80.6907 4.79765 81.5997 4.56695 82.6424 4.56695C83.3438 4.56695 83.9967 4.67999 84.6011 4.90608C85.2102 5.12756 85.7408 5.46208 86.193 5.90965C86.6498 6.35722 87.0051 6.92014 87.2588 7.59841C87.5126 8.27207 87.6395 9.06108 87.6395 9.96544V10.7752H78.6628V8.94803H84.8641C84.8641 8.52354 84.7718 8.14749 84.5873 7.81989C84.4027 7.49228 84.1466 7.2362 83.819 7.05164C83.496 6.86246 83.12 6.76787 82.6909 6.76787C82.2433 6.76787 81.8465 6.87169 81.5005 7.07932C81.159 7.28234 80.8914 7.55688 80.6976 7.90294C80.5038 8.24438 80.4046 8.62504 80.4 9.04493V10.7821C80.4 11.3081 80.4969 11.7626 80.6907 12.1456C80.8891 12.5286 81.1682 12.8239 81.5281 13.0315C81.888 13.2391 82.3148 13.343 82.8085 13.343C83.1361 13.343 83.4361 13.2968 83.7083 13.2045C83.9805 13.1123 84.2135 12.9738 84.4073 12.7893C84.6011 12.6047 84.7488 12.3786 84.8503 12.111L87.5772 12.2909C87.4388 12.9461 87.155 13.5183 86.7259 14.0074C86.3014 14.4919 85.7523 14.8702 85.0787 15.1425C84.4096 15.4101 83.6368 15.5439 82.7601 15.5439Z" fill="#263238"/>
+                <path d="M92.512 9.19027V15.3362H89.5636V4.70537H92.3736V6.581H92.4982C92.7335 5.96271 93.128 5.47362 93.6817 5.11372C94.2354 4.7492 94.9067 4.56695 95.6957 4.56695C96.434 4.56695 97.0776 4.72844 97.6267 5.05143C98.1758 5.37441 98.6026 5.83582 98.9071 6.43566C99.2117 7.03087 99.3639 7.74145 99.3639 8.56737V15.3362H96.4155V9.09338C96.4201 8.44279 96.254 7.93524 95.9172 7.57072C95.5804 7.2016 95.1167 7.01703 94.526 7.01703C94.1292 7.01703 93.7786 7.10239 93.474 7.27311C93.1741 7.44384 92.9388 7.693 92.7681 8.0206C92.602 8.34359 92.5166 8.73348 92.512 9.19027Z" fill="#263238"/>
+                <path d="M107.342 4.70537V6.92014H100.94V4.70537H107.342ZM102.394 2.15839H105.342V12.0695C105.342 12.3417 105.384 12.5539 105.467 12.7062C105.55 12.8539 105.665 12.9577 105.813 13.0177C105.965 13.0777 106.14 13.1076 106.339 13.1076C106.477 13.1076 106.616 13.0961 106.754 13.073C106.892 13.0454 106.999 13.0246 107.072 13.0107L107.536 15.2047C107.388 15.2509 107.181 15.3039 106.913 15.3639C106.646 15.4285 106.32 15.4678 105.937 15.4816C105.227 15.5093 104.604 15.4147 104.069 15.1978C103.538 14.981 103.125 14.6441 102.83 14.1873C102.534 13.7305 102.389 13.1538 102.394 12.4571V2.15839Z" fill="#263238"/>
+                </svg>
+            </a>
+            <input type="checkbox" id="menu_toggle">
+            <label for="menu_toggle" class="header_button">
+                <span></span>
+            </label>
+            <ul class="nav_list_phone">
+                    <li><a class="nav_link" href="#home">Home</a></li>
+                    <li><a class="nav_link" href="#features">Features</a></li>
+                    <li><a class="nav_link" href="#community">Community</a></li>
+                    <li><a class="nav_link" href="#blog">Blog</a></li>
+                    <li><a class="nav_link" href="#pricing">Pricing</a></li>
+                    <span class="nav_line"></span>
+                    <li><a class="register" href="#register">Register now
+                            <svg class="arrow" width="15" height="15" viewBox="0 -1 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.47357 4.55933L8.19268 2.84022C8.39656 2.63634 8.39656 2.30579 8.19268 2.10191L6.47357 0.3828M8.03977 2.47106L0.382812 2.47106" stroke="white" stroke-width="0.90" stroke-linecap="round"/></svg>
+                        </a>
+                    </li>
+                </ul>
+
+            <nav>
+                <ul class="nav_list">
+                    <li><a class="nav_link" href="#home">Home</a></li>
+                    <li><a class="nav_link" href="#features">Features</a></li>
+                    <li><a class="nav_link" href="#community">Community</a></li>
+                    <li><a class="nav_link" href="#blog">Blog</a></li>
+                    <li><a class="nav_link" href="#pricing">Pricing</a></li>
+                    <span class="nav_line"></span>
+                    <li><a class="register" href="#register">Register now
+                            <svg class="arrow" width="15" height="15" viewBox="0 -1 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M6.47357 4.55933L8.19268 2.84022C8.39656 2.63634 8.39656 2.30579 8.19268 2.10191L6.47357 0.3828M8.03977 2.47106L0.382812 2.47106" stroke="white" stroke-width="0.90" stroke-linecap="round"/></svg>
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <section class="hero">
+          <div class="container hero_inner">
+            <div class="hero_content">
+              <h2 class="hero_title">Lessons and insights <span>from 8 years</span></h2>
+              <p class="sub_text">Where to grow your business as a photographer: site or social media?</p>
+              <a class="register" href="#register">Register</a>
+            </div>
+            <img src="image/Illustration_hero.svg" alt="Character Image" class="hero_image">
+          </div>
+          <div class="circle_container">
+            <div class="circle"></div>
+            <div class="circle"></div>
+            <div class="circle"></div>
+          </div>
+        </section>
+
+        <section class="client">
+          <div class="container client_inner">
+            <div class="client_content">
+              <h2 class="main_title">Our Clients</h2>
+              <p class="sub_text">We have been working with some Fortune 500+ clients</p>
+              </div>
+              <div class="client_carousel">
+                <ul class="client_list">
+                  <li><img src="image/logo1.svg" alt="Client Image 1" class="client_image"></li>
+                  <li><img src="image/logo2.svg" alt="Client Image 2" class="client_image" ></li>
+                  <li><img src="image/logo3.svg" alt="Client Image 3" class="client_image"></li>
+                  <li><img src="image/logo4.svg" alt="Client Image 4" class="client_image"></li>
+                  <li><img src="image/logo5.svg" alt="Client Image 5" class="client_image"></li>
+                  <li><img src="image/logo6.svg" alt="Client Image 6" class="client_image"></li>
+                  <li><img src="image/logo7.svg" alt="Client Image 7" class="client_image"></li>
+                </ul>
+              </div>
+          </div>
+        </section>
+
+        <section class="community">
+          <div class="container community_inner">
+            <h2 class="community_title">Manage your entire community in a single system</h2>
+            <p class="sub_text">Who is Nextcent suitable for?</p>
+            <ul class="community_cards_list">
+                <li>
+                  <article class="community_card">
+                    <img src="image/icon_community_1.svg" alt="Membership Organisations icon" class="community_image">
+                    <h3 class="community_heading">Membership Organisations</h3>
+                    <p class="description">Our membership management software provides full automation of membership renewals and payments</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="community_card">
+                    <img src="image/icon_community_2.svg" alt="National Associations icon" class="community_image">
+                    <h3 class="community_heading">National Associations</h3>
+                    <p class="description">Our membership management software provides full automation of membership renewals and payments</p>
+                  </article>
+                </li>
+                <li>
+                  <article class="community_card">
+                    <img src="image/icon_community_3.svg" alt="Clubs And Groups icon" class="community_image">
+                    <h3 class="community_heading">Clubs And Groups</h3>
+                    <p class="description">Our membership management software provides full automation of membership renewals and payments</p>
+                  </article>
+                </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="features" id="features_1">
+          <div class="container features_inner">
+            <img src="image/Illustration_features.svg" alt="Mobile login image" class="features_image">
+            <div class="features_wrap_text">
+              <h2 class="features_title main_title">The unseen of spending three years at Pixelgrade</h2>
+              <p class="sub_text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed sit amet justo ipsum. Sed accumsan quam vitae est varius fringilla. Pellentesque placerat vestibulum lorem sed porta. Nullam mattis tristique iaculis. Nullam pulvinar sit amet risus pretium auctor. Etiam quis massa pulvinar, aliquam quam vitae, tempus sem. Donec elementum pulvinar odio.</p>
+              <a class="register" href="#register">Learn More</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="analytics">
+          <div class="container analytics_inner">
+          <div class="analytics_wrap_text">
+            <h2 class="main_title">Helping a local <span>business reinvent itself</span></h2>
+            <p class="sub_text no_margin_text">We reached here with our hard work and dedication</p>
+          </div>
+          <div class="analytics_cards_list">
+            <article class="analytics_card">
+              <img src="image/icon_analytics_1.svg" alt="Members icon" class="analytics_image">
+              <div class="analytics_stats">
+                <h3 class="main_heading">2,245,341</h3>
+                <p class="description">Members</p>
+              </div>
+            </article>
+            <article class="analytics_card">
+              <img src="image/icon_analytics_2.svg" alt="Clubs icon" class="analytics_image">
+              <div class="analytics_stats">
+                <h3 class="main_heading">46,328</h3>
+                <p class="description">Clubs</p>
+              </div>
+            </article>
+            <article class="analytics_card">
+              <img src="image/icon_analytics_3.svg" alt="Event Bookings icon" class="analytics_image">
+              <div class="analytics_stats">
+                <h3 class="main_heading">828,867</h3>
+                <p class="description">Event Bookings</p>
+              </div>
+            </article>
+            <article class="analytics_card">
+              <img src="image/icon_analytics_4.svg" alt="Payments icon" class="analytics_image">
+              <div class="analytics_stats">
+                <h3 class="main_heading">1,926,436</h3>
+                <p class="description">Payments</p>
+              </div>
+            </article>
+          </div>
+        </section>
+
+        <section class="features" id="features_2">
+          <div class="container features_inner">
+            <img src="image/illustration_features_2.svg" alt="Mobile login image" class="features_image">
+            <div class="features_wrap_text">
+              <h2 class="features_title main_title">How to design your site footer like we did</h2>
+              <p class="sub_text">Donec a eros justo. Fusce egestas tristique ultrices. Nam tempor, augue nec tincidunt molestie, massa nunc varius arcu, at scelerisque elit erat a magna. Donec quis erat at libero ultrices mollis. In hac habitasse platea dictumst. Vivamus vehicula leo dui, at porta nisi facilisis finibus. In euismod augue vitae nisi ultricies, non aliquet urna tincidunt. Integer in nisi eget nulla commodo faucibus efficitur quis massa. Praesent felis est, finibus et nisi ac, hendrerit venenatis libero. Donec consectetur faucibus ipsum id gravida.</p>
+              <a class="register" href="#register">Learn More</a>
+            </div>
+          </div>
+        </section>
+
+        <section class="reviews">
+          <div class="container reviews_inner">
+            <img src="image/image_reviews.svg" alt="Reviews image" class="reviews_image">
+            <div class="reviews_wrap_text">
+              <p class="sub_text reviews_text">Maecenas dignissim justo eget nulla rutrum molestie. Maecenas lobortis sem dui, vel rutrum risus tincidunt ullamcorper. Proin eu enim metus. Vivamus sed libero ornare, tristique quam in, gravida enim. Nullam ut molestie arcu, at hendrerit elit. Morbi laoreet elit at ligula molestie, nec molestie mi blandit. Suspendisse cursus tellus sed augue ultrices, quis tristique nulla sodales. Suspendisse eget lorem eu turpis vestibulum pretium. Suspendisse potenti. Quisque malesuada enim sapien, vitae placerat ante feugiat eget. Quisque vulputate odio neque, eget efficitur libero condimentum id. Curabitur id nibh id sem dignissim finibus ac sit amet magna.</p>
+              <p class="accent_text">Tim Smith</p>
+              <p class="sub_text">British Dragon Boat Racing Association</p>
+              <div class="reviews_wrap_logo">
+                <ul class="reviews_list">
+                  <li><img src="image/logo1.svg" alt="Client Image 1" class="client_image"></li>
+                  <li><img src="image/logo2.svg" alt="Client Image 2" class="client_image" ></li>
+                  <li><img src="image/logo3.svg" alt="Client Image 3" class="client_image"></li>
+                  <li><img src="image/logo4.svg" alt="Client Image 4" class="client_image"></li>
+                  <li><img src="image/logo5.svg" alt="Client Image 5" class="client_image"></li>
+                  <li><img src="image/logo6.svg" alt="Client Image 6" class="client_image"></li>
+                  <li><p class="accent_text accent_button"> Meet all customers
+                    <svg class="arrow" width="17" height="17" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M5.34184 5.34189L6.44123 4.2425C6.57161 4.11212 6.57161 3.90073 6.44123 3.77035L5.34184 2.67096M6.34344 4.00643L1.66931 4.00643" stroke="#4CAF4F" stroke-width="0.70" stroke-linecap="round"/>
+                    </svg></p></li>
+                </ul>
+            </div>
+          </div>
+        </section>
+
+        <section class="article">
+          <div class="container article_inner">
+            <div class="article_wrap_text">
+              <h2 class="main_title">Caring is the new marketing</h2>
+              <p class="sub_text">The Nextcent blog is the best place to read about the latest membership insights, trends and more. See who's joining the community, read about how our community are increasing their membership income and lot's more.​</p>
+            </div>
+            <ul class="article_cards_list">
+                <li>
+                  <article class="article_card">
+                    <img src="image/image_article_1.svg" alt="Blog image" class="article_image">
+                    <div class="article_card_wrap">
+                      <h3 class="article_text">Creating Streamlined Safeguarding Processes with OneRen</h3>
+                      <p class="accent_text accent_button"> Readmore
+                      <svg class="arrow" width="17" height="17" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.34184 5.34189L6.44123 4.2425C6.57161 4.11212 6.57161 3.90073 6.44123 3.77035L5.34184 2.67096M6.34344 4.00643L1.66931 4.00643" stroke="#4CAF4F" stroke-width="0.70" stroke-linecap="round"/>
+                      </svg></p>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="article_card">
+                    <img src="image/image_article_2.svg" alt="Blog image" class="article_image">
+                    <div class="article_card_wrap">
+                      <h3 class="article_text">What are your safeguarding responsibilities and how can you manage them?</h3>
+                      <p class="accent_text accent_button"> Readmore
+                      <svg class="arrow" width="17" height="17" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.34184 5.34189L6.44123 4.2425C6.57161 4.11212 6.57161 3.90073 6.44123 3.77035L5.34184 2.67096M6.34344 4.00643L1.66931 4.00643" stroke="#4CAF4F" stroke-width="0.70" stroke-linecap="round"/>
+                      </svg></p>
+                    </div>
+                  </article>
+                </li>
+                <li>
+                  <article class="article_card">
+                    <img src="image/image_article_3.svg" alt="Blog image" class="article_image">
+                    <div class="article_card_wrap">
+                      <h3 class="article_text">Revamping the Membership Model with Triathlon Australia</h3>
+                      <p class="accent_text accent_button"> Readmore
+                      <svg class="arrow" width="17" height="17" viewBox="0 0 9 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5.34184 5.34189L6.44123 4.2425C6.57161 4.11212 6.57161 3.90073 6.44123 3.77035L5.34184 2.67096M6.34344 4.00643L1.66931 4.00643" stroke="#4CAF4F" stroke-width="0.70" stroke-linecap="round"/>
+                      </svg></p>
+                    </div>
+                  </article>
+                </li>
+            </ul>
+          </div>
+        </section>
+
+        <section class="cta">
+          <div class="cta_inner">
+            <h1 class="cta_title">Pellentesque suscipit fringilla libero eu.</h1>
+            <a class="register" href="#register">Get a Demo
+              <svg class="arrow" width="15" height="15" viewBox="0 -1 9 5" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path d="M6.47357 4.55933L8.19268 2.84022C8.39656 2.63634 8.39656 2.30579 8.19268 2.10191L6.47357 0.3828M8.03977 2.47106L0.382812 2.47106" stroke="white" stroke-width="0.90" stroke-linecap="round"/></svg>
+            </a>
+          </div>
+        </section>
+    </main>
+
+    <footer class="footer">
+      <div class="container footer_inner">
+        <div class="footer_wrap_logo">
+          <img src="image/footer_nexcent.svg" alt="Nexcent Logo" class="footer_logo">
+          <p class="description footer_text">Copyright © 2020 Landify UI Kit. <span>All rights reserved</span></p>
+          <ul class="footer_wrap_links">
+            <li>
+              <div class="icon_hover">
+                <a href="http://" target="_blank" class="footer_social_link">
+                  <svg class="footer_image" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.34186C0 2.39163 2.39163 0 5.34186 0C8.2921 0 10.6837 2.39163 10.6837 5.34186C10.6837 8.2921 8.2921 10.6837 5.34186 10.6837C2.39163 10.6837 0 8.2921 0 5.34186Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.34218 2.49286C4.56843 2.49286 4.47133 2.49624 4.16743 2.51007C3.86413 2.52396 3.6571 2.57198 3.47595 2.64243C3.28857 2.7152 3.12962 2.81254 2.97126 2.97096C2.81278 3.12932 2.71544 3.28827 2.64243 3.47559C2.5718 3.6568 2.52372 3.86389 2.51007 4.16708C2.49648 4.47097 2.49292 4.56814 2.49292 5.34188C2.49292 6.11563 2.49636 6.21244 2.51013 6.51633C2.52408 6.81964 2.5721 7.02667 2.64249 7.20782C2.71532 7.3952 2.81266 7.55415 2.97108 7.71251C3.12938 7.87099 3.28833 7.96856 3.4756 8.04133C3.65687 8.11179 3.86395 8.1598 4.1672 8.17369C4.47109 8.18752 4.56814 8.19091 5.34183 8.19091C6.11563 8.19091 6.21244 8.18752 6.51634 8.17369C6.81964 8.1598 7.0269 8.11179 7.20817 8.04133C7.3955 7.96856 7.55421 7.87099 7.71251 7.71251C7.87099 7.55415 7.96833 7.3952 8.04134 7.20787C8.11137 7.02667 8.15945 6.81958 8.1737 6.51639C8.18735 6.2125 8.19091 6.11563 8.19091 5.34188C8.19091 4.56814 8.18735 4.47103 8.1737 4.16714C8.15945 3.86383 8.11137 3.6568 8.04134 3.47565C7.96833 3.28827 7.87099 3.12932 7.71251 2.97096C7.55403 2.81248 7.39556 2.71514 7.208 2.64243C7.02637 2.57198 6.81922 2.52396 6.51592 2.51007C6.21202 2.49624 6.11528 2.49286 5.34129 2.49286H5.34218ZM5.08659 3.00627C5.16244 3.00615 5.24708 3.00627 5.34217 3.00627C6.10286 3.00627 6.19302 3.009 6.49341 3.02265C6.77119 3.03535 6.92195 3.08177 7.02238 3.12076C7.15534 3.1724 7.25012 3.23413 7.34978 3.33385C7.4495 3.43356 7.51123 3.52853 7.56298 3.66148C7.60198 3.76179 7.64845 3.91256 7.6611 4.19034C7.67475 4.49067 7.67772 4.58089 7.67772 5.34122C7.67772 6.10156 7.67475 6.19177 7.6611 6.49211C7.64839 6.76989 7.60198 6.92065 7.56298 7.02096C7.51134 7.15391 7.4495 7.24858 7.34978 7.34824C7.25007 7.44796 7.1554 7.50969 7.02238 7.56132C6.92207 7.6005 6.77119 7.6468 6.49341 7.6595C6.19308 7.67315 6.10286 7.67612 5.34217 7.67612C4.58142 7.67612 4.49126 7.67315 4.19093 7.6595C3.91315 7.64668 3.76239 7.60026 3.6619 7.56126C3.52894 7.50963 3.43398 7.4479 3.33426 7.34818C3.23454 7.24847 3.17282 7.15374 3.12106 7.02072C3.08206 6.92041 3.03559 6.76965 3.02294 6.49187C3.00929 6.19154 3.00656 6.10132 3.00656 5.34051C3.00656 4.5797 3.00929 4.48996 3.02294 4.18962C3.03565 3.91184 3.08206 3.76108 3.12106 3.66065C3.1727 3.5277 3.23454 3.43273 3.33426 3.33302C3.43398 3.2333 3.52894 3.17157 3.6619 3.11981C3.76233 3.08064 3.91315 3.03434 4.19093 3.02158C4.45375 3.00971 4.5556 3.00615 5.08659 3.00556V3.00627ZM6.86296 3.47933C6.67421 3.47933 6.52107 3.63228 6.52107 3.82109C6.52107 4.00984 6.67421 4.16297 6.86296 4.16297C7.0517 4.16297 7.20484 4.00984 7.20484 3.82109C7.20484 3.63234 7.0517 3.47933 6.86296 3.47933ZM5.34219 3.87878C4.53419 3.87878 3.87909 4.53388 3.87909 5.34188C3.87909 6.14987 4.53419 6.80467 5.34219 6.80467C6.15018 6.80467 6.80504 6.14987 6.80504 5.34188C6.80504 4.53388 6.15018 3.87878 5.34219 3.87878ZM5.34218 4.3922C5.86663 4.3922 6.29185 4.81736 6.29185 5.34188C6.29185 5.86633 5.86663 6.29155 5.34218 6.29155C4.81766 6.29155 4.3925 5.86633 4.3925 5.34188C4.3925 4.81736 4.81766 4.3922 5.34218 4.3922Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="icon_hover">
+                <a href="http://" target="_blank" class="footer_social_link">
+                  <svg class="footer_image" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.34186C0 2.39163 2.39163 0 5.34186 0C8.2921 0 10.6837 2.39163 10.6837 5.34186C10.6837 8.2921 8.2921 10.6837 5.34186 10.6837C2.39163 10.6837 0 8.2921 0 5.34186Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M8.19091 5.3379C8.19091 5.53058 8.17129 5.72298 8.13277 5.91053C8.0952 6.09362 8.03955 6.27338 7.96666 6.44522C7.89543 6.61402 7.80709 6.77668 7.70387 6.92837C7.60218 7.07911 7.48503 7.22053 7.35635 7.34944C7.22739 7.47779 7.08549 7.59461 6.93482 7.69673C6.78263 7.79924 6.61973 7.88745 6.45083 7.95901C6.27875 8.03152 6.09858 8.08709 5.91564 8.12459C5.72784 8.16322 5.53474 8.18294 5.34179 8.18294C5.14869 8.18294 4.9556 8.16322 4.76807 8.12459C4.58485 8.08709 4.40469 8.03152 4.23274 7.95901C4.06385 7.88745 3.9008 7.79924 3.74861 7.69673C3.59794 7.59462 3.45604 7.47779 3.32736 7.34944C3.19854 7.22053 3.08139 7.07911 2.97956 6.92837C2.87689 6.77668 2.78841 6.614 2.7169 6.44522C2.644 6.27338 2.58822 6.09361 2.55052 5.91053C2.5124 5.72298 2.49292 5.53058 2.49292 5.3379C2.49292 5.14509 2.51239 4.95227 2.55053 4.76513C2.58823 4.58204 2.64401 4.402 2.71692 4.23045C2.78842 4.06152 2.8769 3.89872 2.97957 3.74701C3.0814 3.59615 3.19855 3.455 3.32737 3.32595C3.45605 3.19758 3.59795 3.08104 3.74862 2.97908C3.90081 2.87613 4.06386 2.78793 4.23275 2.71624C4.4047 2.64357 4.58485 2.58788 4.76808 2.55065C4.95561 2.51231 5.1487 2.49286 5.3418 2.49286C5.53475 2.49286 5.72784 2.51231 5.91565 2.55065C6.09859 2.58789 6.27875 2.64358 6.45085 2.71624C6.61973 2.78792 6.78264 2.87613 6.93483 2.97908C7.0855 3.08104 7.22741 3.19758 7.35636 3.32595C7.48505 3.455 7.60219 3.59615 7.70388 3.74701C7.80709 3.89872 7.89543 4.06154 7.96666 4.23045C8.03955 4.402 8.0952 4.58204 8.13277 4.76513C8.17129 4.95227 8.19091 5.14509 8.19091 5.3379ZM4.30367 3.14035C3.62519 3.46029 3.1188 4.08458 2.9609 4.83696C3.02504 4.83752 4.03893 4.8503 5.2071 4.54037C4.786 3.79326 4.33609 3.18357 4.30367 3.14035ZM5.40868 4.91449C4.15593 5.289 2.9538 5.26205 2.91068 5.26039C2.90998 5.2865 2.90873 5.31178 2.90873 5.3379C2.90873 5.96205 3.14453 6.53106 3.53212 6.9613C3.53128 6.96004 4.19711 5.78049 5.5101 5.35652C5.54182 5.34596 5.5741 5.33651 5.60609 5.32734C5.54503 5.18927 5.47838 5.0509 5.40868 4.91449ZM6.9486 3.51446C6.52024 3.13729 5.9578 2.90851 5.34178 2.90851C5.14409 2.90851 4.95224 2.93241 4.76847 2.97658C4.80491 3.02549 5.26192 3.63088 5.67802 4.39381C6.59607 4.05013 6.94261 3.52335 6.9486 3.51446ZM5.77194 5.72993C5.76652 5.73172 5.7611 5.73327 5.75581 5.73521C4.32027 6.23493 3.85147 7.24203 3.8464 7.25302C4.25945 7.57378 4.77753 7.76729 5.34179 7.76729C5.67873 7.76729 5.99967 7.69879 6.29168 7.57476C6.25565 7.36249 6.11431 6.61845 5.77194 5.72993ZM6.70138 7.35277C7.24769 6.98464 7.63569 6.40007 7.74392 5.72297C7.69384 5.70686 7.01314 5.49167 6.22781 5.6174C6.54695 6.49314 6.67661 7.20635 6.70138 7.35277ZM5.8653 4.75583C5.92177 4.87169 5.97645 4.98961 6.02694 5.10813C6.0449 5.15064 6.06243 5.19232 6.07953 5.23399C6.91535 5.12896 7.73879 5.30566 7.774 5.31288C7.76843 4.73694 7.56211 4.20835 7.22073 3.79452C7.21614 3.80104 6.82591 4.36408 5.8653 4.75583Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="icon_hover">
+                <a href="http://" target="_blank" class="footer_social_link">
+                  <svg class="footer_image" width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.34186C0 2.39163 2.39163 0 5.34186 0C8.2921 0 10.6837 2.39163 10.6837 5.34186C10.6837 8.2921 8.2921 10.6837 5.34186 10.6837C2.39163 10.6837 0 8.2921 0 5.34186Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M5.18184 4.34195L5.19305 4.5268L5.00623 4.50416C4.32618 4.4174 3.73207 4.12316 3.22764 3.629L2.98103 3.3838L2.91751 3.56487C2.78299 3.9685 2.86893 4.39477 3.14917 4.68146C3.29863 4.83989 3.26501 4.86253 3.00719 4.76822C2.91751 4.73804 2.83904 4.71541 2.83157 4.72672C2.80541 4.75313 2.89509 5.09641 2.96608 5.23221C3.06323 5.42082 3.26127 5.60566 3.47799 5.71506L3.66108 5.80182L3.44436 5.80559C3.23511 5.80559 3.22764 5.80936 3.25006 5.88858C3.32479 6.13378 3.61998 6.39406 3.94879 6.50723L4.18045 6.58645L3.97868 6.70716C3.67976 6.88068 3.32853 6.97876 2.97729 6.98631C2.80915 6.99008 2.6709 7.00517 2.6709 7.01648C2.6709 7.05421 3.12675 7.26545 3.39205 7.34844C4.18793 7.59364 5.13327 7.48802 5.84321 7.0693C6.34764 6.77129 6.85207 6.17904 7.08747 5.60566C7.21451 5.30011 7.34155 4.74181 7.34155 4.47398C7.34155 4.30046 7.35276 4.27783 7.56201 4.07035C7.68531 3.94964 7.80115 3.81761 7.82357 3.77989C7.86093 3.70822 7.85719 3.70822 7.66663 3.77234C7.34903 3.88551 7.30419 3.87042 7.46112 3.70067C7.57695 3.57996 7.71521 3.36117 7.71521 3.29704C7.71521 3.28572 7.65916 3.30458 7.59564 3.33853C7.52838 3.37626 7.37892 3.43284 7.26682 3.46679L7.06505 3.53092L6.88196 3.40644C6.78108 3.33853 6.63909 3.26309 6.56436 3.24046C6.37379 3.18764 6.08234 3.19519 5.91046 3.25554C5.4434 3.4253 5.14821 3.86288 5.18184 4.34195Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+            <li>
+              <div class="icon_hover">
+                <a href="http://" target="_blank" class="footer_social_link">
+                  <svg class="footer_image"width="11" height="11" viewBox="0 0 11 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path opacity="0.1" fill-rule="evenodd" clip-rule="evenodd" d="M0 5.34186C0 2.39163 2.39163 0 5.34186 0C8.2921 0 10.6837 2.39163 10.6837 5.34186C10.6837 8.2921 8.2921 10.6837 5.34186 10.6837C2.39163 10.6837 0 8.2921 0 5.34186Z" fill="white"/>
+                  <path fill-rule="evenodd" clip-rule="evenodd" d="M7.56805 3.50545C7.81322 3.57272 8.00631 3.77096 8.07183 4.02269C8.19091 4.47894 8.19091 5.43089 8.19091 5.43089C8.19091 5.43089 8.19091 6.38282 8.07183 6.83909C8.00631 7.09083 7.81322 7.28906 7.56805 7.35637C7.12373 7.47861 5.34191 7.47861 5.34191 7.47861C5.34191 7.47861 3.5601 7.47861 3.11575 7.35637C2.87057 7.28906 2.67749 7.09083 2.61196 6.83909C2.49292 6.38282 2.49292 5.43089 2.49292 5.43089C2.49292 5.43089 2.49292 4.47894 2.61196 4.02269C2.67749 3.77096 2.87057 3.57272 3.11575 3.50545C3.5601 3.38318 5.34191 3.38318 5.34191 3.38318C5.34191 3.38318 7.12373 3.38318 7.56805 3.50545ZM4.80773 4.62959V6.41022L6.23223 5.51994L4.80773 4.62959Z" fill="white"/>
+                  </svg>
+                </a>
+              </div>
+            </li>
+          </ul>
+        </div>
+        <div class="footer_wrap_info" id="company_info">
+          <h3 class="footer_title">Company</h3>
+          <ul class="footer_info_list">
+            <li><a href="#" class="footer_info_link">About us</a></li>
+            <li><a href="#" class="footer_info_link">Blog</a></li>
+            <li><a href="#" class="footer_info_link">Contact us</a></li>
+            <li><a href="#" class="footer_info_link">Pricing</a></li>
+            <li><a href="#" class="footer_info_link">Testimonials</a></li>
+          </ul>
+        </div>
+        <div class="footer_wrap_info" id="support_info">
+          <h3 class="footer_title">Support</h3>
+          <ul class="footer_info_list">
+            <li><a href="#" class="footer_info_link">Help center</a></li>
+            <li><a href="#" class="footer_info_link">Terms of service</a></li>
+            <li><a href="#" class="footer_info_link">Legal</a></li>
+            <li><a href="#" class="footer_info_link">Privacy policy</a></li>
+            <li><a href="#" class="footer_info_link">Status</a></li>
+          </ul>
+        </div>
+        <div class="footer_email_wrap">
+          <h3 class="footer_title">Stay up to date</h3>
+          <form action="" method="post" class="footer_form">
+            <input type="email" name="email" placeholder="Your email address" class="footer_email_input" required>
+            <button type="button" class="footer_email_button"><svg width="20" height="20" viewBox="0 -0.3 6 6" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <path fill-rule="evenodd" clip-rule="evenodd" d="M5.43546 0.0733474C5.50348 0.141366 5.52652 0.242335 5.49474 0.333127L3.74194 5.34113C3.70803 5.43803 3.61839 5.50441 3.51581 5.5086C3.41322 5.51278 3.31848 5.45392 3.27678 5.3601L2.3143 3.19451L0.148704 2.23202C0.0548842 2.19033 -0.00397573 2.09558 0.000209406 1.993C0.00439454 1.89042 0.0707766 1.80078 0.167681 1.76686L5.17568 0.0140648C5.26647 -0.0177123 5.36744 0.00532932 5.43546 0.0733474ZM2.80266 3.06026L3.4779 4.57955L4.65958 1.20335L2.80266 3.06026ZM4.30546 0.849231L0.929254 2.0309L2.44855 2.70614L4.30546 0.849231Z" fill="white"/>
+              </svg>
+            </button>
+          </form>
+      </div>
+    </footer>
+
+</body>
+</html>
