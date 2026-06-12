@@ -6,8 +6,8 @@ This project involves converting a minimal Figma landing page design into a full
 
 ## 🌟 Project Overview
 
-This landing page is based on agency-style design that focuses on simplicity, structure, and visual balance. TMy goal was to practice turning a UI design into real code while maintaining responsiveness and clean structure.
-The original design is optimized for a desktop layout, but it also adapts to tablets and mobile screens.
+This landing page is based on agency-style design that focuses on simplicity, structure, and visual balance. My goal was to practice turning a UI design into real code while maintaining responsiveness across different screen sizes.
+The original design is optimized for a desktop layout, but also adapts to tablets and mobile screens.
 
 ---
 
@@ -15,23 +15,23 @@ The original design is optimized for a desktop layout, but it also adapts to tab
 
 - Fully responsive layout (desktop, tablet, mobile)
 - Flexible layout using **Flexbox** / **Grid**
-- Structured page built with semantic **HTML** elements
+- Structured page using semantic **HTML** elements
 - Modern minimal UI based on Figma design
 
 ---
 
 ## 💡 What I Practiced
 
-- Converting Figma layouts into semantic HTML
+- Converting Figma layouts into HTML and CSS
 - Building responsive layouts with Flexbox and CSS Grid
-- Writing clean, maintainable front-end code
-- Creating consistent design systems from scratch
+- Working with structured HTML and CSS
+- Creating consistent page layouts from a design
 
 ---
 
 ## 🔗 Live Demo
 
-[`Preview`](https://alinamaistrenko.github.io/maistrenko-landing-page/)
+[`View Live Demo`](https://alinamaistrenko.github.io/maistrenko-landing-page/)
 
 ---
 
