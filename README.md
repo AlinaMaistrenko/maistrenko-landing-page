@@ -45,3 +45,5 @@ Original UI Design: [Muntasir Billah on Figma](https://www.figma.com/community/f
 
 Here’s a preview of the full-length layout:
 
+![Long Screenshot of Landing Page](./image/github_screenshot.png)
+
